@@ -1,0 +1,13 @@
+---
+title: "Ecoli Genome Analysis"
+author: "Sarah M. Bedoyan"
+date: "October 12, 2015"
+output: html_document
+---
+
+Here I'm working with the data carpentry ecoli genomes data set.  I found it at this website: 
+
+
+```{r set seed, echo=TRUE, eval=TRUE}
+set.seed(41837781)
+```
