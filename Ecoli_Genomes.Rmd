@@ -23,3 +23,22 @@ metadata <- read.csv('data/Ecoli_metadata.csv') # reading in my data file into a
 str(metadata)
 mean(metadata$genome_size) # calculating the mean
 ```
+
+```{r package import, eval = TRUE}
+#install.packages("ggplot2")
+#library("ggplot2")
+```
+
+
+```{r {r data exploration, echo = TRUE, eval = TRUE, fig.center = TRUE}
+ggplot(metadata, aes(x = genome_size)) +
+  geom_bar(stat = "bin", binwidth=0.01) # create a bar plot (histogram) with bins by a genome size of 0.01
+```
+
+Always include session info for reproducible documents!
+
+```{r session info}
+install.packages("devtools")
+#library(devtools)
+devtools::session_info()
+```
